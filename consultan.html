@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script> 
+   
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<style>
+    .loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('img/Loader.gif') 50% 50% no-repeat rgb(249,249,249);
+      
+      opacity: .8;
+  }
+  #ul{
+    border: 0px;
+  }
+  button{
+    outline: none;
+  }
+
+  </style>
+<script  type="text/javascript" src="js/consultan.js"></script>
+<body>
+    <ul class="collection" id="ul"> 
+      <h4> BUSCAR NI&Ntilde;O</h4>
+        <hr>
+    <form accept-charset="utf-8" method="POST" id="cargar" enctype="multipart/form-data">
+      
+         
+            <div class="row">
+          
+        </div>
+          </li>
+        <li  class="collection-item">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">title</i>
+            <input placeholder="Nombre ni&ntilde;o" id="nombre_nino" type="text" class="validate" name="nombre_nino">
+            <label for="first_name">Identificador del ni&ntilde;o</label>
+          </div>
+        </div>
+     
+        <center>
+            <button class="waves-effect waves-light btn-large" style="align-items: center;" type="submit" name="action">Consultar
+              <i class="material-icons right">find_in_page</i>
+            </button>
+            <div class="loader" style="display: none;"></div>
+          </center>
+      </li>
+  
+      
+      </form>
+      <div class="loader" style="display: none;"></div>
+      <li class="collection-item" id="resultados">
+        
+        </li>
+    </ul>
+</body>
+</html>

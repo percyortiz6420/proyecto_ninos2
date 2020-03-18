@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script> 
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<style>
+    .loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('img/Loader.gif') 50% 50% no-repeat rgb(249,249,249);
+      
+      opacity: .8;
+  }
+  #lista{
+      border: 0px;
+  }
+  </style>
+<script  type="text/javascript" src="js/verficha1.js"></script>
+<body id="body" class="#e8f5e9 green lighten-5">
+    <div class="col6  #43a047 green darken-1 container center-align z-depth-3" id="forma"> <!-- Note that "m8 l9" was added -->
+        <center> <img id="imagen" class="materialboxed s3" width="200" src="img/logo.png"></center>
+       </div>
+    <ul class="collection" id="lista"> 
+        
+
+    <form  class="col6  s12 container z-depth-3" accept-charset="utf-8" method="POST" id="cargar" enctype="multipart/form-data">
+      
+       
+        <li  class="collection-item" >
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">title</i>
+            <input placeholder="No. ficha" id="noficha" type="text" class="validate" name="noficha">
+            <label for="first_name">Ingrese No. de ficha</label>
+          </div>
+        </div>
+     
+        <center>
+            <button class="waves-effect waves-light btn-large" style="align-items: center;" type="submit" name="action" id="enviar">Consultar
+              <i class="material-icons right">find_in_page</i>
+            </button>
+            <div class="loader" style="display: none;"></div>
+          </center>
+      </li>
+      <li  class="collection-item" style="display: none;" id="resulatadosconsulta">
+      <div id="resultados" >
+        
+    </div>
+</li>
+<li  class="collection-item" style="display: none;" id="res">
+  <div id="resultados1" >
+    
+</div>
+</li>
+      </form>
+      <label for="copyright" id="cp">©2020 Ebenekids Guatemala, All rights reserved.</label>
+      <div class="loader" style="display: none;"></div>
+      
+      
+      
+        
+        
+    </ul>
+    
+</body>
+</html>

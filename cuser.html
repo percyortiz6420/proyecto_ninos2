@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script> 
+    <script src="js/cuser.js"></script>
+   <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <title>Usuario</title>
+    
+</head>
+
+<style>
+  .loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/Loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+</style>
+<body >
+    
+    <form accept-charset="utf-8" method="POST" id="cargar" enctype="multipart/form-data">
+      
+      <ul class="collection"> 
+       
+          <div class="row">
+        
+            <i id="iconoheader" class="material-icons prefix">supervisor_account</i><h4> Creacion de Usuario</h4>
+      </div>
+        </li>
+      <li class="collection-item">
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">supervisor_account</i>
+              <select id="nombre_servidor" name='id_servidor'>
+                <option value="0">Seleccione un servidor</option>
+                
+              </select>
+              <label> Nombre Servidor</label>
+            </div>
+              
+      </div>
+      <div class="row">
+    
+       
+        <div class="input-field col l6 s12">
+          <i class="material-icons prefix">supervised_user_circle</i> 
+          <input placeholder="" id="usuario" type="text" class="validate" name="usuario">
+          <label for="last_name">Usuario</label>
+        </div>
+
+        <div class="input-field col l6 s12">
+            <i class="material-icons prefix">vpn_key</i> 
+            <input placeholder="" id="pass" type="text" class="validate" name="pass">
+            <label for="last_name">Contrase&ntilde;a</label>
+          </div>
+
+      </div>
+
+    </li>
+    
+    
+    </ul>
+    <center>
+    <button class="waves-effect waves-light btn-large" style="align-items: center;" type="submit" name="action" id="enviar">Crear
+      <i class="material-icons right">send</i>
+    </button>
+    <div class="loader" style="display: none;"></div>
+  </center>
+    </form>
+  <div id="mensaje"></div>
+  
+
+</body>
+</html>

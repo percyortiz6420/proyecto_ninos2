@@ -1,0 +1,17 @@
+#iconoheader {
+    float: left;
+    
+    padding: 10px;
+    
+  }
+  #imagen{
+    
+    position: relative;
+    width: 12%;
+    
+    max-width:200px;
+    min-width: 160px;
+  }
+  #cp{
+    color:'#cccc';
+  }

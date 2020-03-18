@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <script  type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script> 
+    <script src="js/actuadorcm.js"></script>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Vista Centro Mando</title>
+<style>
+.img{
+    width: 20%;
+    
+}
+#encabezado{
+    font-size: 300%;
+}
+#foto{
+    width: 500%;
+}
+
+#cp{
+    color:'#cccc';
+  }
+</style>
+</head>
+
+<body bgcolor="#757575">
+    <div class="container" id="pagina">
+        <div class="col s12 m2">
+            <img src="img/logo.png" class="img">
+          </div>
+          <div class="col s12 m2 grey darken-4 center-align z-depth-3">
+            <label class=" white-text" id="encabezado">FICHA NI&Ntilde;O NO. <span id="noficha">5</span>
+            <br>
+            Nombre: <span id="nombre_nino"></span>
+            </label>
+            <h3 class="white-text center-align"></h3>    
+          </div>
+          <footer class="page-footer grey darken-2 z-depth-3">
+              <div class="row">
+                <div class="col l6 s12">
+                
+                  <img class="materialboxed responsive-img" width="650" src="blob.php?id=21" id="imagen" >
+                </div>
+                <br><br><br><br>
+                <div class="col l4 offset-l1 s12 card-panel grey darken-4" id="info">
+                  <h3 class="white-text">Informacion</h3>
+                  <hr>
+                  <ul>
+                    <li><label for="last_name" class="white-text text-lighten-3"><h5>Nombre Encargado:</h5></label><label for="last_name" class="white-text text-lighten-3" ><h4 id="nombre_encargado"> </h4></label></li>
+                    <li><label for="last_name" class="white-text text-lighten-3"><h5>Apellido Encargado:</h5></label><label for="last_name" class="white-text text-lighten-3" ><h4 id="apellido_encargado"> </h4></label></li>
+                    <li><label for="last_name" class="white-text text-lighten-3"><h5>Edad Ni&ntilde;o:</h5></label><label for="last_name" class="white-text text-lighten-3" > <h4 id="edad_nino"> A&ntilde;os</h4></label></li>
+  
+                  </ul>
+                </div>
+              
+            </div>
+            
+          </footer>
+      </div>
+      
+      <label for="copyright" id="cp">©2020 Ebenekids Guatemala, All rights reserved.</label>  
+</body>
+</html>
